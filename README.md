@@ -1,30 +1,44 @@
-# React + TypeScript + Vite
+# Invoice Generator Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to the Invoice Generator frontend repository! This directory contains the code for the React-based frontend of our MERN stack Invoice Generator application.
 
-Currently, two official plugins are available:
+## Project Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+The Invoice Generator is a web application designed to simplify the process of creating and managing invoices. It leverages the power of the MERN stack (MongoDB, Express.js, React, Node.js) to provide users with a seamless and user-friendly experience.
 
-## Expanding the ESLint configuration
+## Features
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- **User Authentication:**
 
-- Configure the top-level `parserOptions` property like this:
+  - Secure user registration and login using JWT tokens.
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+- **Product Management:**
+
+  - Add and manage product details, including name, quantity, rate, total, and GST.
+  - Support for adding multiple products.
+
+- **PDF Generation:**
+  - Generate professional PDF invoices that adhere to a predefined format.
+  - Invoices include user details, product information, and the date.
+
+## Project Structure
+
+- **src/:** Contains the source code for the React application.
+- **public/:** Static assets and HTML template.
+
+## Getting Started
+
+To run the frontend locally, follow these steps:
+
+```bash
+git clone https://github.com/swarajsaxena/levitation-assignment
+cd frontend-directory
+npm install
+npm run dev
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Backend Integration
+
+The frontend communicates with the backend for various functionalities such as user authentication, product management, and PDF generation. Ensure that the backend server is up and running. You can find the backend repository and setup instructions here.
+
+Backend Link: [Backend](https://github.com/swarajsaxena/levitation-backend)
